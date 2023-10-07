@@ -1,0 +1,21 @@
+
+server:
+  port: 1371
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_web
+    username: realtimes
+    password: realtimes
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
