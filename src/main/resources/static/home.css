@@ -1,0 +1,35 @@
+body {
+    background-image: url("https://avatars.mds.yandex.net/i?id=0458f7d7134d6b582d38b930e038e083f0ac13cf-9845553-images-thumbs&n=13");
+    /*height: 100vh;*/
+    background-size: cover;
+}
+
+.main-table {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.add-button {
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+    color: blue;
+    background-color: green;
+    cursor: pointer;}
+
+.add-button:hover {
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+    color: #ff004d;
+    background-color: #f1e601;
+}
+
+.add-button a {
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+    color: blue;
+    background-color: green;
+/*    tag chiziqni olish tegi*/
+}

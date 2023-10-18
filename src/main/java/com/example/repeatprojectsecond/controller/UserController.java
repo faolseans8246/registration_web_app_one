@@ -62,7 +62,7 @@ public class UserController {
 
     @GetMapping("/page/{pageNo}")
     public String findWithPage (@PathVariable (value = "pageNo") int pageNo, @RequestParam("sortField") String sortField,
-                                @RequestParam("sortField") String sortDir, Model model) {
+                                @RequestParam("sortDir") String sortDir, Model model) {
         int pageSize = 5;
 
         Page <Users> pageObj = userService.frindPaginated(pageNo, pageSize, sortField, sortDir);

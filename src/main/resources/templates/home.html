@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
+    <link rel="stylesheet" th:href="home.css">
 </head>
 <body>
 
   <div align="center">
     <h1>List of Users</h1>
 
-    <a th:href="@{/showAddPage}">Add user</a>
+    <a th:href="@{/showAddPage}" class="add-button">Add user</a>
     <hr color="red">
 
-    <table border="1">
+    <table border="1" class="main-table">
 
       <thead>
         <tr>
           <th>
             <a th:href="@{'/page/' + ${currentPage} + '?sortField=firstname&sortDir=' + ${reverseSortDr}}">
-              User free name
+              firstname
             </a>
           </th>
 
           <th>
             <a th:href="@{'/page/' + ${currentPage} + '?sortField=lastname&sortDir=' + ${reverseSortDr}}">
-              User free lastname
+              lastname
             </a>
           </th>
 
